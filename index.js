@@ -48,7 +48,8 @@ console.log(questions)
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    
+    var fileName = README
+    console.log(fileName)
 }
 
 // TODO: Create a function to initialize app
