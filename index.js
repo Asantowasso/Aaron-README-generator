@@ -4,8 +4,10 @@ console.log(inquirer)
 const fs = require('fs')
 console.log(fs) 
 
-const generateREADME = ({title, description, installation, usage, contribution, test, questions})
+const generateREADME = ({title, description, installation, usage, contribution, test, questions}) =>
 console.log(generateREADME)
+
+
 // TODO: Create an array of questions for user input
 // Needed questions, 1. What is my project title?, 2. The description, 3. Installation instructions, 4. Usage, 5. Contribution guidelines, 6. Test instructions, 7. Questions
 const questions = ([
@@ -60,9 +62,12 @@ function writeToFile(fileName, data) {
 }
 
 // TODO: Create a function to initialize app
-function init() {
-    inquirer.prompt(questions)
+function init() {    
+inquirer.prompt(questions)
+.then ((inquirerResponse, data) => {
+    console.log("creating README");
+    fs.writeFile("README.md", inquirerResponse, data);
+})
 }
-
 // Function call to initialize app
 init();
