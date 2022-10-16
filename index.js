@@ -1,11 +1,8 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer')
-console.log(inquirer)
 const fs = require('fs')
-console.log(fs) 
+const { title } = require('process')
 
-const generateREADME = ({title, description, installation, usage, contribution, test, questions}) =>
-console.log(generateREADME)
 
 
 // TODO: Create an array of questions for user input
@@ -25,36 +22,64 @@ const questions = ([
 
     {
         type: 'input',
-        name: 'Installation instructions',
+        name: 'installation',
         message: 'How do you install your application?',
     },
 
     {
         type: 'input',
-        name: 'Usage',
+        name: 'usage',
         message: 'How do you use your application',
     },
 
     {
         type: 'input',
-        name: 'Contribution guidelines',
+        name: 'contribution',
         message: 'How do you contribute to this application',
     },
 
     {
         type: 'input',
-        name: 'Test instructions',
+        name: 'test',
         message: 'How do you test this application'
     },
 
     {
         type: 'input',
-        name: 'Questions to address',
+        name: 'yourquestions',
         message: 'Are there any questions you would like to address for the user'
     }
 ]);
 
-console.log(questions)
+
+const generateREADME = ({title, description, installation, usage, contribution, test, yourquestions}) =>
+`
+# ${title}
+
+## Description
+
+${description}
+
+## Installation
+
+${installation}
+
+## Usage
+
+${usage}
+
+## Contribution
+
+${contribution}
+
+## Test
+
+${test}
+
+## Your Questions
+
+${yourquestions}
+`
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
@@ -64,9 +89,12 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 function init() {    
 inquirer.prompt(questions)
-.then ((inquirerResponse, data) => {
+.then ((inquirerResponse) => {
+console.log(inquirerResponse)
+
+
     console.log("creating README");
-    fs.writeFile("README.md", inquirerResponse, data);
+    fs.writeFileSync("./output/README.md", generateREADME (inquirerResponse));
 })
 }
 // Function call to initialize app
