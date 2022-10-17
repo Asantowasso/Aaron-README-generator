@@ -6,3 +6,5 @@ The README generator is able to create professional looking README files. It acc
 ## Usage
 
 Professional looking README files can quickly be created. It simplifies the process of by creating a criteria with input by the user without the need for them to format the document themselves.
+
+<img src ="./assets/Readme generator.jpg">

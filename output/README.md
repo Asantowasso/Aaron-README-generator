@@ -1,26 +1,26 @@
 
-# a
+# Price Checker
 
 ## Description
 
-v
+A way for customers to check the price of items
 
 ## Installation
 
-undefined
+It can be installed on the ios or google play store
 
 ## Usage
 
-c
+It can be used on any mobile device or home computer
 
 ## Contribution
 
-d
+Contributions can be made on github
 
 ## Test
 
-f
+The application can be tested through use
 
 ## Your Questions
 
-g
+The application is unfinished and is prone to glitches
