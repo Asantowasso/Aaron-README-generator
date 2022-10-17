@@ -3,24 +3,24 @@
 
 ## Description
 
-A way for customers to check the price of items
+An application that allows the user to check the prices of items
 
 ## Installation
 
-It can be installed on the ios or google play store
+It can be installed through the ios or googleplay store
 
 ## Usage
 
-It can be used on any mobile device or home computer
+It can be used on any mobile device or PC
 
 ## Contribution
 
-Contributions can be made on github
+Contributions can be made on Github
 
 ## Test
 
-The application can be tested through use
+The application is tested through regualr use
 
 ## Your Questions
 
-The application is unfinished and is prone to glitches
+How many retailers can I use this applicaiton with?
