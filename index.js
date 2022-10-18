@@ -48,11 +48,18 @@ const questions = ([
         type: 'input',
         name: 'yourquestions',
         message: 'Are there any questions you would like to address for the user'
+    },
+
+    {
+        type: 'input',
+        name: 'emailaddress',
+        message:'If you have additional questions reach out to this email address'
+
     }
 ]);
 
 
-const generateREADME = ({title, tableofcontents, description, installation, usage, contribution, test, yourquestions}) =>
+const generateREADME = ({title, tableofcontents, description, installation, usage, contribution, test, yourquestions, emailaddress}) =>
 `
 # ${title}
 
@@ -88,6 +95,9 @@ ${test}
 ### Questions
 
 ${yourquestions}
+
+If you have additional questions reach out to
+${emailaddress}
 `
 
 // TODO: Create a function to write README file
