@@ -52,31 +52,40 @@ const questions = ([
 ]);
 
 
-const generateREADME = ({title, description, installation, usage, contribution, test, yourquestions}) =>
+const generateREADME = ({title, tableofcontents, description, installation, usage, contribution, test, yourquestions}) =>
 `
 # ${title}
 
-## Description
+## Table of Contents
+[Description](###Description)
+[Installation](###Installation)
+[Usage](###Usage)
+[Contribution](###Contribution)
+[Test](###Test)
+[Questions](###Questions)
+
+
+### Description
 
 ${description}
 
-## Installation
+### Installation
 
 ${installation}
 
-## Usage
+### Usage
 
 ${usage}
 
-## Contribution
+### Contribution
 
 ${contribution}
 
-## Test
+### Test
 
 ${test}
 
-## Your Questions
+### Questions
 
 ${yourquestions}
 `
