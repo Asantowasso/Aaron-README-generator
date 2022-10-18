@@ -55,6 +55,14 @@ const questions = ([
         name: 'emailaddress',
         message:'If you have additional questions reach out to this email address'
 
+    },
+    {
+        type: 'list',
+        name: 'license',
+        message: 'Which license are you using',
+        choices:['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'None']
+
+
     }
 ]);
 
