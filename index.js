@@ -76,7 +76,7 @@ const generateREADME = ({title, tableofcontents, description, installation, usag
 `
 # ${title}
 
-### ${license} license.![Github license] (https://img.shields.io/badge/license-mit-blue.svg)
+### ${license} license.![Github license](https://img.shields.io/badge/license-mit-blue.svg)
 
 ## Table of Contents
 [Description](###Description)
