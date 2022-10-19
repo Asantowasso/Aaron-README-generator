@@ -76,7 +76,7 @@ const generateREADME = ({title, tableofcontents, description, installation, usag
 `
 # ${title}
 
-### ${license} ![Github license] (https://img.shields.io/badge/license-mit-blue.svg)
+### ${license} license.![Github license] (https://img.shields.io/badge/license-mit-blue.svg)
 
 ## Table of Contents
 [Description](###Description)
@@ -89,7 +89,7 @@ const generateREADME = ({title, tableofcontents, description, installation, usag
 
 ### Description
 
-${description}
+This application can be described as ${description}
 
 ### Installation
 
@@ -101,15 +101,15 @@ We intended for this application to be used to ${usage}
 
 ### Contribution
 
-${contribution}
+You can contribute to this application by ${contribution}
 
 ### Test
 
-${test}
+In order to test this application ${test}
 
 ### Questions
 Link to my Github profile https://github.com/${gituser}
-${yourquestions}
+List any of your questions here ${yourquestions}
 
 If you have additional questions reach out to
 ${emailaddress}

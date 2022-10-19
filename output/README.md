@@ -1,7 +1,7 @@
 
-# Price Checker
+# f
 
-### MIT
+### MIT license ![Github license](https://img.shields.io/badge/license-mit-blue.svg)
 
 ## Table of Contents
 [Description](###Description)
@@ -14,27 +14,27 @@
 
 ### Description
 
-f
+This application can be described as f
 
 ### Installation
 
-g
+To install this application the user must g
 
 ### Usage
 
-d
+We intended for this application to be used to a
 
 ### Contribution
 
-f
+You can contribute to this application by s
 
 ### Test
 
-g
+In order to test this application f
 
 ### Questions
-
-d
+Link to my Github profile https://github.com/Asantowasso
+List any of your questions here g
 
 If you have additional questions reach out to
 Joe@gmail.com
