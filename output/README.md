@@ -1,5 +1,7 @@
 
-# d
+# Price Checker
+
+### MIT
 
 ## Table of Contents
 [Description](###Description)
@@ -20,19 +22,19 @@ g
 
 ### Usage
 
-e
+d
 
 ### Contribution
 
-t
+f
 
 ### Test
 
-a
+g
 
 ### Questions
 
-Joe@gmail.com
+d
 
 If you have additional questions reach out to
 Joe@gmail.com

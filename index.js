@@ -49,6 +49,12 @@ const questions = ([
         name: 'yourquestions',
         message: 'Are there any questions you would like to address for the user'
     },
+    {
+        type: 'input',
+        name: 'gituser',
+        message:'what is your github username'
+
+    },
 
     {
         type: 'input',
@@ -62,14 +68,15 @@ const questions = ([
         message: 'Which license are you using',
         choices:['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'None']
 
-
     }
 ]);
 
 
-const generateREADME = ({title, tableofcontents, description, installation, usage, contribution, test, yourquestions, emailaddress}) =>
+const generateREADME = ({title, tableofcontents, description, installation, usage, contribution, test, yourquestions, gituser, emailaddress, license}) =>
 `
 # ${title}
+
+### ${license} ![Github license] (https://img.shields.io/badge/license-mit-blue.svg)
 
 ## Table of Contents
 [Description](###Description)
@@ -86,11 +93,11 @@ ${description}
 
 ### Installation
 
-${installation}
+To install this application the user must ${installation}
 
 ### Usage
 
-${usage}
+We intended for this application to be used to ${usage}
 
 ### Contribution
 
@@ -101,7 +108,7 @@ ${contribution}
 ${test}
 
 ### Questions
-
+Link to my Github profile https://github.com/${gituser}
 ${yourquestions}
 
 If you have additional questions reach out to
